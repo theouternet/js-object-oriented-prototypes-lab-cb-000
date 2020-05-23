@@ -21,3 +21,14 @@
 //     return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`
 //   }
 // }
+
+    function User(name, email) {
+        this.name = name;
+        this.email = email;
+    }
+     
+    User.prototype.sayHello = function() {
+        console.log(`Hello everybody, my name is ${this.name}`);
+    };
+     
+    let sarah = new User('sarah', 'sarah@gmail.com');
